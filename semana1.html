@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lista = [
+            {"descricao" : "Estudar JS","local": "IFMG", "hora": "12:00"},
+            {"descricao" : "Fazer atividades JS","local": "Casa", "hora": "08:00"},
+            {"descricao" : "Ler o livro","local": "Casa", "hora": "09:00"}
+        ];
+        function addLista(descricao, local, hora){
+            let novoElemento = {"descricao" : descricao, "local": local, "hora": hora};
+            lista.push(novoElemento);
+            console.log(lista)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Olá, digite seu nome:</p>
+    <input id="nome">
+    <button onclick="alertar()">OK</button>
+    <p id="nomeUser">-----</p>
+    <script>
+        function alertar(){
+        let nome = document.getElementById("nome").value;
+        alert("Olá! Tudo bem com você "+ nome +"?");
+        document.getElementById("nomeUser").innerHTML = "<b> Nome digitado: </b>"+nome;
+        }
+    </script>
+</body>
+</html>
